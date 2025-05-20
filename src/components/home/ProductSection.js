@@ -11,51 +11,35 @@ const ProductSection = () => {
     const products = [
         {
             id: 1,
-            name: 'Nước rửa chén fiby',
-            image: '/images/san-pham7.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 1'
+            name: 'NƯỚC GIẶT FIBY',
+            scent: "Hương comfort",
+            image: '/images/san-pham9.jpg',
+            capacity: "3.8L, 5L, 10L",
+            description: 'Chăm sóc vài với công thức đột phá, FIBY mang đến trải nghiệm giặt giũ sạch sẽ và hương thơm ngàn hoa dịu dàng. Với sự kết hợp của các loại hương từ thiên nhiên như Comfort, Cá Ngựa và Vanilla, FIBY không chỉ là một sản phẩm nước giặt mà còn là một hành trình cảm xúc. Để mỗi lần giặt đều mang lại một sự tươi mới và thư giãn!'
         },
         {
             id: 2,
-            name: 'Nước giặt fiby (hương comfort)',
-            image: '/images/san-pham9.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 2'
+            name: 'NƯỚC GIẶT FIBY',
+            scent: "Hương vanilla",
+            image: '/images/san-pham11.jpg',
+            capacity: "3.8L, 5L, 10L",
+            description: 'Chăm sóc vài với công thức đột phá, FIBY mang đến trải nghiệm giặt giũ sạch sẽ và hương thơm ngàn hoa dịu dàng. Với sự kết hợp của các loại hương từ thiên nhiên như Comfort, Cá Ngựa và Vanilla, FIBY không chỉ là một sản phẩm nước giặt mà còn là một hành trình cảm xúc. Để mỗi lần giặt đều mang lại một sự tươi mới và thư giãn!'
         },
         {
             id: 3,
-            name: 'Sản phẩm 3',
-            image: '/images/san-pham11.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 3'
+            name: 'NƯỚC GIẶT FIBY',
+            scent: "Hương cá ngựa",
+            image: '/images/san-pham15.jpg',
+            capacity: "3.8L, 5L, 10L",
+            description: 'Chăm sóc vài với công thức đột phá, FIBY mang đến trải nghiệm giặt giũ sạch sẽ và hương thơm ngàn hoa dịu dàng. Với sự kết hợp của các loại hương từ thiên nhiên như Comfort, Cá Ngựa và Vanilla, FIBY không chỉ là một sản phẩm nước giặt mà còn là một hành trình cảm xúc. Để mỗi lần giặt đều mang lại một sự tươi mới và thư giãn!'
         },
         {
             id: 4,
-            name: 'Sản phẩm 4',
-            image: '/images/san-pham12.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 4'
-        },
-        {
-            id: 5,
-            name: 'Sản phẩm 5',
-            image: '/images/san-pham14.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 5'
-        },
-        {
-            id: 6,
-            name: 'Sản phẩm 6',
-            image: '/images/san-pham15.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 6'
-        },
-        {
-            id: 7,
-            name: 'Sản phẩm 7',
-            image: '/images/san-pham16.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 7'
-        },
-        {
-            id: 8,
-            name: 'Sản phẩm 8',
-            image: '/images/san-pham18.jpg',
-            description: 'Mô tả ngắn cho sản phẩm 8'
+            name: 'NƯỚC RỬA CHÉN',
+            scent: "Hương chanh",
+            image: '/images/san-pham7.jpg',
+            capacity: "0.8L, 3.8L, 5L, 10L",
+            description: 'Nước rửa chén chanh  FIBY làm sạch dầu mỡ cứng đầu, dịu nhẹ với da tay nhờ công thức tiên tiến. Kết hợp công nghệ nano bạc kháng khuẩn và hương chanh thơm mát, FIBY giúp chén đĩa sạch bong, an toàn và mang đến trải nghiệm rửa chén thư thái cho cả gia đình!'
         },
 
     ];
@@ -89,12 +73,11 @@ const ProductSection = () => {
                             spaceBetween: 24
                         },
                     }}
-                    className="pb-12"
                 >
                     {products.map((product) => (
-                        <SwiperSlide key={product.id}>
-                            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col mx-1"> {/* Thêm margin ngang */}
-                                <div className="relative aspect-[3/4] overflow-hidden">
+                        <SwiperSlide key={product.id} className="mb-12">
+                            <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full flex flex-col ">
+                                <div className="relative aspect-[3/3.5] overflow-hidden">
                                     <Image
                                         src={product.image}
                                         alt={product.name}
@@ -104,16 +87,17 @@ const ProductSection = () => {
                                         priority={product.id <= 4}
                                     />
                                 </div>
-                                <div className="p-3 sm:p-4 flex-grow">
-                                    <h3 className="text-base sm:text-lg font-semibold mb-1 sm:mb-2 line-clamp-2">{product.name}</h3>
+                                <div className="p-2 md:p-3 flex-grow ">
+                                    <h3 className="text-sm md:text-base font-semibold line-clamp-2">{product.name}</h3>
+                                    <h3 className="text-xs md:text-sm font-semibold line-clamp-2 ">{product.scent}</h3>
+                                    <h3 className="text-[12px] md:text-sm my-1">Dung tích: {product?.capacity || "â"}</h3>
                                     <p className="text-gray-600 text-xs sm:text-sm mb-2 sm:mb-3 line-clamp-3">{product.description}</p>
                                 </div>
                             </div>
                         </SwiperSlide>
                     ))}
-
-                    <div className="swiper-button-prev !text-[#c19a5b] !left-0 scale-70"></div>
-                    <div className="swiper-button-next !text-[#c19a5b] !right-0 scale-70"></div>
+                    <div className="swiper-button-prev -translate-y-1/2 !text-black !left-0 scale-80"></div>
+                    <div className="swiper-button-next -translate-y-1/2 !text-black !right-0 scale-80"></div>
                 </Swiper>
             </div>
         </section>

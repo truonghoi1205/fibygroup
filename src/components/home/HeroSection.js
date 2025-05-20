@@ -20,7 +20,7 @@ const slides = [
 
 const HeroSection = () => {
     return (
-        <section className="relative w-full h-[170px] md:h-[450px]">
+        <section className="relative w-full h-[160px] md:h-[450px]">
             <Swiper
                 modules={[Autoplay]}
                 autoplay={{ delay: 4000, disableOnInteraction: false }}

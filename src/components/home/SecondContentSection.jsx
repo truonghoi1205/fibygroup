@@ -11,12 +11,11 @@ const SecondContentSection = () => {
                     <video
                         autoPlay
                         muted
-                        loop
                         playsInline
                         controls
                         className="absolute top-0 left-0 w-full h-full object-cover"
                     >
-                        <source src="/videos/about-us.mp4" type="video/mp4" />
+                        <source src="/video/demo.mp4" type="video/mp4" />
                         Trình duyệt của bạn không hỗ trợ video.
                     </video>
                 </div>

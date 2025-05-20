@@ -8,15 +8,14 @@ import 'swiper/css';
 import Image from "next/image";
 
 const images = [
-    "/images/banner-1.jpg",
-    "/images/banner-2.jpg"
+    "/images/team.jpg",
+    "/images/team-1.jpg"
 ];
 
 const StartSection = () => {
     return (
         <section className="bg-gradient-to-r from-white to-[#bc9a5c]">
             <div className="max-w-7xl flex flex-col md:flex-row items-center gap-6 lg:gap-8 mx-auto py-8 md:py-10 px-4 sm:px-6">
-                {/* Image Slider - Điều chỉnh kích thước và khoảng cách */}
                 <div className="w-full md:w-1/2 overflow-hidden rounded-xl shadow-md">
                     <Swiper
                         modules={[Autoplay]}
@@ -26,12 +25,14 @@ const StartSection = () => {
                     >
                         {images.map((img, idx) => (
                             <SwiperSlide key={idx}>
-                                <Image
-                                    fill
-                                    src={img}
-                                    alt={`Slide ${idx + 1}`}
-                                    className="w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover rounded-xl"
-                                />
+                                <div className="relative w-full h-[250px] sm:h-[300px] md:h-[350px]">
+                                    <Image
+                                        src={img}
+                                        alt={`Slide ${idx + 1}`}
+                                        fill
+                                        className="object-cover rounded-xl"
+                                    />
+                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
