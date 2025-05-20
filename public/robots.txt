@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.fibygroup.vn/
+
+# Sitemaps
+Sitemap: https://www.fibygroup.vn/sitemap.xml
