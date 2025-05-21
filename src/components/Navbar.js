@@ -19,7 +19,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="flex items-center justify-between px-6 py-1 bg-white shadow-md relative">
+        <nav className="flex items-center justify-between px-6 py-1 bg-white shadow-sm relative">
             <div className="flex items-center">
                 <Link href="/">
                     <Image src="/images/logo.png" alt="Company Logo" width={60} height={30} className="mr-10" />
