@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const timelineData = [
     {year: "2010", content: "Thành lập công ty, bắt đầu kinh doanh hàng tiêu dùng."},
     {year: "2015", content: "Mở rộng hệ thống chi nhánh ra miền Trung và miền Nam."},
@@ -8,7 +10,16 @@ const timelineData = [
 const ContentSection = () => {
     return (
         <section className="max-w-sm md:max-w-7xl mx-auto w-full py-6 md:py-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">Hành trình phát triển</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center ">Hành trình phát triển</h2>
+            <div className="flex justify-center mb-14">
+                <Image
+                    src="/images/divider.png"
+                    alt="divider"
+                    width={100}
+                    height={100}
+                    className="w-54 h-10 object-contain"
+                />
+            </div>
             <div className="relative flex items-start md:gap-10 w-full mx-auto px-0 md:min-w-max md:justify-center">
                 <div className="absolute top-1/2 -translate-y-1/2 left-0 w-full h-2 md:h-3 bg-[#60481e] z-0"/>
                 <div

@@ -37,25 +37,27 @@ const StartSection = () => {
                         ))}
                     </Swiper>
                 </div>
-
-                {/* Content - Điều chỉnh typography và spacing */}
                 <div className="w-full md:w-1/2 space-y-4 md:space-y-6 mt-4 md:mt-0">
                     <h1 className="text-2xl sm:text-3xl font-bold flex items-center gap-2">
                         <PiHandshakeLight className="text-3xl sm:text-4xl text-[#c19a5b]"/>
                         Fiby Group
                     </h1>
-
                     <div className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-3 sm:space-y-4">
                         <p>
-                            Với hơn 25 năm kinh nghiệm làm phân phối, chúng tôi hiện là NPP chính thức cho các tập đoàn lớn
+                            Với hơn 25 năm kinh nghiệm làm phân phối, chúng tôi hiện là NPP chính thức cho các tập đoàn
+                            lớn
                             trong nước và quốc tế về các lĩnh vực kinh doanh hàng tiêu dùng nhanh, dụng cụ thể thao, vật
-                            liệu xây dựng... Hệ thống trải dài trên cả nước gồm 6 công ty thành viên và hơn 1,000 cán bộ công
+                            liệu xây dựng... Hệ thống trải dài trên cả nước gồm 6 công ty thành viên và hơn 1,000 cán bộ
+                            công
                             nhân viên.
                         </p>
                         <p>
-                            Chúng tôi lấy đạo đức kinh doanh và chất lượng sản phẩm đặt lên hàng đầu để phục vụ khách hàng.
-                            Tiến Thành là cầu nối tin tưởng giữa nhà sản xuất và khách hàng, góp phần không nhỏ trong việc
-                            lưu thông hàng hóa. Doanh thu hàng năm đạt hàng ngàn tỷ đồng, tạo ra hàng ngàn việc làm ổn định và
+                            Chúng tôi lấy đạo đức kinh doanh và chất lượng sản phẩm đặt lên hàng đầu để phục vụ khách
+                            hàng.
+                            Tiến Thành là cầu nối tin tưởng giữa nhà sản xuất và khách hàng, góp phần không nhỏ trong
+                            việc
+                            lưu thông hàng hóa. Doanh thu hàng năm đạt hàng ngàn tỷ đồng, tạo ra hàng ngàn việc làm ổn
+                            định và
                             đóng góp đầy đủ nghĩa vụ kinh tế - xã hội với nhà nước.
                         </p>
                     </div>

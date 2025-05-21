@@ -1,4 +1,5 @@
 import Job2 from "@/components/job/Job2";
+import Link from "next/link";
 
 export const metadata = {
     title: "Tuyển dụng nhân viên marketing | Fiby Group",
@@ -19,7 +20,14 @@ export const metadata = {
 
 export default function Job2Page() {
     return (
-        <main className="bg-gray-50">
+        <main>
+            <nav className="text-sm text-gray-600 max-w-7xl mx-auto px-4 mt-6">
+                <ol className="flex flex-wrap items-center space-x-1">
+                    <li><Link href="/" className="text-gray-400 hover:text-[#60481e]">Trang chủ</Link> /</li>
+                    <li><Link href="/job" className="text-gray-400 hover:text-[#60481e]">Tuyển dụng</Link> /</li>
+                    <li className="font-medium text-gray-800">Tuyển dụng nhân viên marketing</li>
+                </ol>
+            </nav>
             <Job2/>
         </main>
     );

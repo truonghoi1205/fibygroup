@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         <title></title>
         <link rel="icon" href="/favicon.png" type="image/png"/>
     </head>
-    <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden bg-bg-body`}>
             <Navbar/>
                 {children}
             <Footer/>

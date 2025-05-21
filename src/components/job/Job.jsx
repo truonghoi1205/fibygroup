@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Job() {
     const jobs = [
@@ -21,12 +22,12 @@ export default function Job() {
     ];
 
     return (
-        <div className="max-w-6xl mx-auto px-4 py-20">
-            <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">Tuyển Dụng</h1>
+        <div className="max-w-7xl mx-auto px-4 pt-2 pb-8 md:pt-4 md:pb-12">
+            <h1 className="text-3xl md:text-4xl font-bold  text-center mb-8">Tuyển Dụng</h1>
             <div className="grid md:grid-cols-2 gap-8">
                 {jobs.map((job) => (
                     <div key={job.id}
-                         className="border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
+                         className=" bg-white rounded-lg transition">
                         <img
                             src={job.image}
                             alt={job.title}
@@ -35,7 +36,8 @@ export default function Job() {
                         <h2 className="p-4 text-2xl text-[#bc9a5c] mb-2 uppercase">{job.title}</h2>
                         <p className="p-4 pt-0 text-gray-600 mb-4">{job.description}</p>
                         <div className="px-4 pb-4">
-                            <Link href={`/job/${job.slug}`} className="text-[#bc9a5c] underline hover:text-black">Xem chi
+                            <Link href={`/job/${job.slug}`} className="text-[#bc9a5c] underline hover:text-black">Xem
+                                chi
                                 tiết</Link>
                         </div>
                     </div>

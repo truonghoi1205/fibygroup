@@ -1,4 +1,5 @@
 import Contact from "@/components/contact/Contact";
+import Link from "next/link";
 
 export const metadata = {
     title: "Liên hệ | Fiby Group",
@@ -19,7 +20,13 @@ export const metadata = {
 
 export default function ContactPage() {
     return (
-        <main className="bg-gray-50">
+        <main>
+            <nav className="text-sm text-gray-600 max-w-7xl mx-auto px-4 mt-6">
+                <ol className="flex flex-wrap items-center space-x-1">
+                    <li><Link href="/" className="text-gray-400 hover:text-[#60481e]">Trang chủ</Link> /</li>
+                    <li className="font-medium text-gray-800">Liên hệ</li>
+                </ol>
+            </nav>
             <Contact/>
         </main>
     );
