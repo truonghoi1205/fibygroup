@@ -28,9 +28,9 @@ export default function Footer() {
                 <div className="">
                     <h3 className="text-lg font-semibold mb-2">Danh mục</h3>
                     <ul className="space-y-2">
-                        <li><Link href="/products/#" className="hover: transition">Nước rửa chén</Link></li>
-                        <li><Link href="/products/#" className="hover: transition">Nước lau sàn</Link></li>
-                        <li><Link href="/products/#" className="hover: transition">Nước giặt</Link></li>
+                        <li><Link href="/product/#" className="hover: transition">Nước rửa chén</Link></li>
+                        <li><Link href="/product/#" className="hover: transition">Nước lau sàn</Link></li>
+                        <li><Link href="/product/#" className="hover: transition">Nước giặt</Link></li>
                     </ul>
                 </div>
                 <div>
@@ -60,15 +60,15 @@ export default function Footer() {
                 <p>Địa chỉ: Số nhà 14, Đường Phạm Ngũ Lão, Phường Ka Long, Thành phố Móng Cái, Tỉnh Quảng Ninh, Việt
                     Nam</p>
                 <div className="flex gap-2 flex-wrap text-sm">
-                    <Link href="tel:0123456789" className="flex items-center">
-                        Điện thoại: 0123456789
+                    <Link href="tel:0588585838" className="flex items-center">
+                        Điện thoại: 0588 585 838
                     </Link>
                     <span>•</span>
                     <Link
-                        href="mailto:cskh@nhathuocbewell.com"
+                        href="mailto:fibygroup@gmail.com"
                         className="flex items-center"
                     >
-                        Email: cskh@gmail.com
+                        Email: fibygroup@gmail.com
                     </Link>
                 </div>
 

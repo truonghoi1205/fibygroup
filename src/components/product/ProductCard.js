@@ -9,7 +9,6 @@ export default function ProductCard({ product }) {
                     src={product.image}
                     alt={product.name}
                     fill
-
                     className="object-cover hover:scale-105 transition-transform duration-300"
                     priority={product.id <= 4}
                 />
