@@ -45,23 +45,39 @@ export default function Footer() {
                     <div className="mt-4">
                         <h3 className="text-lg font-semibold  mb-2">Kết nối với chúng tôi</h3>
                         <div className="flex gap-3">
-                            <Link href="https://facebook.com" target="_blank" rel="noreferrer">
+                            <a
+                                href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <img src="/images/facebook-color-svgrepo-com.svg" alt="" className="w-7"/>
-                            </Link>
-                            <Link href="https://instagram.com" target="_blank" rel="noreferrer">
-                                <img src="/images/zalo-seeklogo.svg" alt="" className="w-7"/>
-                            </Link>
+                            </a>
+                            <a
+                                href="https://chat.zalo.me/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img src="/images/zalo-seeklogo.svg" alt="Zalo" className="w-7"/>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="border-t border-gray-700 mt-8 pt-4 text-sm">
-                <p>© Công Ty <span className="font-bold">TNHH TM XNK VIỆT HOÀNG</span></p>
+            <p>© Công Ty <span className="font-bold">TNHH TM XNK VIỆT HOÀNG</span></p>
                 <p>Địa chỉ: Số nhà 14, Đường Phạm Ngũ Lão, Phường Ka Long, Thành phố Móng Cái, Tỉnh Quảng Ninh, Việt
                     Nam</p>
                 <div className="flex gap-2 flex-wrap text-sm">
                     <Link href="tel:0588585838" className="flex items-center">
                         Điện thoại: 0588 585 838
+                    </Link>
+                    <span>•</span>
+                    <Link href="tel:0838866838" className="flex items-center">
+                        0838 866 838
+                    </Link>
+                    <span>•</span>
+                    <Link href="tel:0981000330" className="flex items-center">
+                        0981 000 330
                     </Link>
                     <span>•</span>
                     <Link

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Job2() {
     return (
         <div className="max-w-7xl mx-auto px-4 pt-2 pb-8 md:pt-4 md:pb-12">
@@ -29,7 +31,8 @@ export default function Job2() {
                     </p>
 
                     <p>
-                        <strong>Khu vực làm việc:</strong> Tỉnh Bắc Giang hoặc làm việc từ xa (theo thỏa thuận)
+                        <strong>Khu vực làm việc:</strong> Thành phố Móng Cái, Tỉnh Quảng Ninh hoặc làm việc từ xa (theo
+                        thỏa thuận)
                     </p>
 
                     <div>
@@ -80,13 +83,21 @@ export default function Job2() {
                             <li>Giấy khám sức khỏe</li>
                         </ul>
                     </div>
-
                     <div>
                         <strong>Điện thoại liên hệ:</strong><br/>
-                        Mrs. Trang – <a href="tel:0915802306" className="text-blue-600 underline">0915.802.306</a> <br/>
-                        Mr. Tuyển – <a href="tel:0975300434" className="text-blue-600 underline">0975.300.434</a>
+                        <Link href="tel:0588585838" className="hover:underline">0588 585 838</Link>
+                        <span className="mx-1">|</span>
+                        <Link href="tel:0981000330" className="hover:underline">0981 000 330</Link>
+                        <span className="mx-1">|</span>
+                        <Link href="tel:083886683" className="hover:underline">0838 866 838</Link>
+                        <br/>
+                        <p>Email: <Link
+                            href="mailto:fibygroup@gmail.com"
+                            className="hover:underline"
+                        >
+                            fibygroup@gmail.com
+                        </Link></p>
                     </div>
-
                     <div>
                         <strong>Địa chỉ nộp hồ sơ:</strong><br/>
                         Công ty FibyGroup – Phạm Ngũ Lão – Ka Long – TP Móng Cái – Quảng Ninh

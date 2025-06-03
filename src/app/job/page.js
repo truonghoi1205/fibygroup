@@ -1,5 +1,6 @@
 import Job from "@/components/job/Job";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = {
     title: "Tuyển dụng | Fiby Group",
@@ -20,14 +21,13 @@ export const metadata = {
 
 
 export default function JobPage() {
+    const breadcrumbItems = [
+        { label: "Trang chủ", href: "/" },
+        { label: "Tuyển dụng" },
+    ];
     return (
         <main>
-            <nav className="text-sm text-gray-600 max-w-7xl mx-auto px-4 mt-6">
-                <ol className="flex flex-wrap items-center space-x-1">
-                    <li><Link href="/" className="text-gray-400 hover:text-[#60481e]">Trang chủ</Link> /</li>
-                    <li className="font-medium text-gray-800">Tuyển dụng</li>
-                </ol>
-            </nav>
+            <Breadcrumb items={breadcrumbItems} />
             <Job/>
         </main>
     );

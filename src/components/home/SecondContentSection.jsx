@@ -29,7 +29,6 @@ const SecondContentSection = () => {
                         Trình duyệt của bạn không hỗ trợ video.
                     </video>
                 </div>
-
                 <div className="text-center mt-8">
                     <Link href="/about"
                           className="bg-[#c19a5b] text-white px-6 py-3 rounded-lg hover:bg-[#a5824d] transition-colors">
