@@ -22,7 +22,7 @@ export function generateMetadata({params}) {
         openGraph: {
             title: `${product.name} ${product.scent} ${product.capacity} | Fiby Group`,
             description: product.description,
-            url: `http://localhost:3000/product/${product.slug}`,
+            url: `https://www.fibygroup.vn/product/${product.slug}`,
             type: "website",
             siteName: "Fiby Group",
         },
